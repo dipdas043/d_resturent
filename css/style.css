@@ -1,0 +1,278 @@
+/* css reset */
+
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Css Varables */
+
+
+/* :root {
+    --navbar-height: 59px;
+} */
+
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    top: 0px;
+}
+
+
+/* nav logo and image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50px;
+    filter: invert(100%);
+}
+
+
+/* nav List style */
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* navbar style end */
+
+
+/*Home Section part */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 441px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(../bg0.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 520px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: White;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home p {
+    color: White;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home .btn:hover {
+    background-color: black;
+    color: yellow;
+}
+
+
+/* For Section container */
+
+
+/*Service section*/
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 24px;
+    margin: 2px 6px;
+    border-radius: 24px;
+    background-color: rgb(240, 228, 228);
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 207px;
+    width: 319px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Client section */
+
+.client-container {
+    position: relative;
+}
+
+.client-container::before {
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients img {
+    height: 88px;
+    border-radius: 55px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+
+/*Contact section*/
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url("https://www.braviahotels.in/assests/images/banner-restaurant-1.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#contact-box input:hover,
+#contact-box textarea:hover {
+    background-color: rgb(178, 240, 159);
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: blanchedalmond;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    color: rgb(37, 56, 37);
+    font-weight: bold;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
